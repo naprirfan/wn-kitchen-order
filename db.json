@@ -1,0 +1,189 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Rempah Rendam",
+            "price": "Rp 148.000",
+            "description": "Lorem ipsum",
+            "tokopediaLink": "https://example.com",
+            "shopeeLink": "https://example.com",
+            "image": "https://placehold.co/300x400/png"
+        },
+        {
+            "id": 2,
+            "name": "Wedang Merah",
+            "price": "Rp 108.000",
+            "description": "Lorem ipsum",
+            "tokopediaLink": "https://example.com",
+            "shopeeLink": "https://example.com",
+            "image": "https://placehold.co/300x400/png"
+        },
+        {
+            "id": 3,
+            "name": "Wedang Hitam",
+            "price": "Rp 108.000",
+            "description": "Lorem ipsum",
+            "tokopediaLink": "https://example.com",
+            "shopeeLink": "https://example.com",
+            "image": "https://placehold.co/300x400/png"
+        },
+        {
+            "id": 4,
+            "name": "Wedang Hangat",
+            "price": "Rp 108.000",
+            "description": "Lorem ipsum",
+            "tokopediaLink": "https://example.com",
+            "shopeeLink": "https://example.com",
+            "image": "https://placehold.co/300x400/png"
+        }
+    ],
+    "features": [
+        {
+            "id": 1,
+            "title": "Rasa yang Lezat",
+            "icon": "fa fa-thumbs-up fa-2xl"
+        },
+        {
+            "id": 2,
+            "title": "Umur Simpan Panjang",
+            "icon": "fa fa-clock fa-2xl"
+        },
+        {
+            "id": 3,
+            "title": "Alami, tanpa bahan kimia",
+            "icon": "fa fa-pagelines fa-2xl"
+        },
+        {
+            "id": 4,
+            "title": "Memiliki izin PIRT",
+            "icon": "fa fa-book fa-2xl"
+        }
+    ],
+    "reviews": [
+        {
+            "id": 1,
+            "author": "John Doe",
+            "description": "No mess, cleans and whitens beautifully.",
+            "stars": 5,
+            "image": "https://placehold.co/400x400/png"
+        },
+        {
+            "id": 2,
+            "author": "Irfan",
+            "description": "I have been using Bits for a year now, and I am very happy with the result. One of my best buy",
+            "stars": 5,
+            "image": "https://placehold.co/400x400/png"
+        },
+        {
+            "id": 3,
+            "author": "Ira",
+            "description": "Best product so far!",
+            "stars": 5,
+            "image": "https://placehold.co/400x400/png"
+        }
+    ],
+    "faq": [
+        {
+            "id": 1,
+            "question": "Mengapa pilih purezen herbs?",
+            "answer": "I have been using Bits for a year now, and I am very happy with the result. One of my best buy"
+        },
+        {
+            "id": 2,
+            "question": "Mengapa pilih purezen herbs?",
+            "answer": "Because I'm me"
+        },
+        {
+            "id": 3,
+            "question": "Mengapa pilih purezen herbs?",
+            "answer": "Because I'm me"
+        },
+        {
+            "id": 4,
+            "question": "Mengapa pilih purezen herbs?",
+            "answer": "Because I'm me"
+        },
+        {
+            "id": 5,
+            "question": "Mengapa pilih purezen herbs?",
+            "answer": "Because I'm me"
+        }
+    ],
+    "socialMedias": [
+        {
+            "id": 1,
+            "icon": "fa fa-house fa-2xl",
+            "text": "Tokopedia",
+            "url": "https://tokopedia.link/UVilxMkX7Mb",
+            "isActive": false
+        },
+        {
+            "id": 2,
+            "icon": "fa-brands fa-instagram fa-2xl",
+            "text": "Instagram",
+            "url": "https://www.instagram.com/purezen.herbs",
+            "isActive": true
+        },
+        {
+            "id": 3,
+            "icon": "fa-brands fa-whatsapp fa-2xl",
+            "text": "WhatsApp",
+            "url": "https://wa.me/6285338803033",
+            "isActive": true
+        }
+    ],
+    "linkTrees": [
+        {
+            "id": 1,
+            "icon": "fa-brands fa-whatsapp fa-2xl",
+            "text": "WhatsApp",
+            "url": "https://wa.me/6285338803033",
+            "isActive": true
+        },
+        {
+            "id": 2,
+            "icon": "fa-brands fa-facebook fa-2xl",
+            "text": "Tokopedia",
+            "url": "https://tokopedia.link/UVilxMkX7Mb",
+            "isActive": true
+        },
+        {
+            "id": 3,
+            "icon": "fa-brands fa-facebook fa-2xl",
+            "text": "Shopee",
+            "url": "https://shopee.co.id/purezen.herbs",
+            "isActive": true
+        },
+        {
+            "id": 4,
+            "icon": "fa-brands fa-instagram fa-2xl",
+            "text": "Instagram",
+            "url": "https://www.instagram.com/purezen.herbs",
+            "isActive": true
+        }
+    ],
+    "resellers": [
+        {
+            "id": 1,
+            "areaName": "Jakarta Selatan - Kalyana Yoga Studio",
+            "notes": "",
+            "url": "https://www.instagram.com/kalyanayoga?igsh=MW1pbmt0cjJyYWNuZQ==",
+            "isActive": true
+        },
+        {
+            "id": 2,
+            "areaName": "Tangerang Selatan - Hi, Gut! Gluten Free",
+            "notes": "",
+            "url": "https://www.instagram.com/higut.glutenfree?igsh=MW5xbDN5ZHVnY3ZxNw==",
+            "isActive": true
+        },
+        {
+            "id": 3,
+            "areaName": "Kalimantan Timur - Garden to Belly",
+            "notes": "",
+            "url": "https://www.instagram.com/garden_to_belly?igsh=MWxtcjlvcmcyN3NwOQ==",
+            "isActive": true
+        }
+        
+    ]
+}
