@@ -1,5 +1,7 @@
+import { OrderQueue } from "../OrderQueue/OrderQueue";
+
 export const Home = () => (
     <div>
-        Home
+        <OrderQueue />
     </div>
 )
