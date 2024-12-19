@@ -1,7 +1,10 @@
 import { OrderQueue } from "../OrderQueue/OrderQueue";
+import { PlacedOrderContextProvider } from "./PlacedOrderContext";
 
 export const Home = () => (
-    <div>
-        <OrderQueue />
-    </div>
+    <PlacedOrderContextProvider>
+        <div>
+            <OrderQueue />
+        </div>
+    </PlacedOrderContextProvider>
 )
