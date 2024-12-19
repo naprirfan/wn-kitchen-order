@@ -1,15 +1,31 @@
-export interface IProduct {
-    name: string;
-    price: string;
-    description: string;
-    tokopediaLink: string;
-    shopeeLink: string;
+export interface IOrderPayload {
+    orderPayload?: ITableOrder[];
+    setOrderPayload?: React.Dispatch<any>;
+    applicationState?: ITableOrder;
+    setApplicationState?: React.Dispatch<any>;
 }
 
-export interface IReview {
-    id: number;
-    author: string;
-    description: string;
-    stars: number;
-    image: string;
+export interface ITableOrder {
+    table: number;
+    itemList: IOrderItemPayload[];
 }
+
+export interface IOrderItemPayload extends IOrderItem {
+    quantity: number;
+    dateTime: Date;
+    status: IOrderStatus;
+    notes: string;
+    uid: string;
+}
+
+export interface IOrderItem {
+    id: number;
+    name: string;
+    categoryId?: number;
+    categoryName?: string;
+}
+
+export type IOrderStatus =
+    'ORDER_PLACED' |
+    'ORDER_IN_PROGRESS' |
+    'ORDER_COMPLETED';

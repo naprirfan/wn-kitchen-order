@@ -5,7 +5,7 @@ export const OrderList = () => {
 
     return (
         <div>
-            <h1>Order List</h1>
+            <h1>Dishes List</h1>
             {JSON.stringify(placedOrder)}
         </div>
     );

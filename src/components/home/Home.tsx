@@ -4,7 +4,7 @@ import { PlacedOrderContextProvider } from "./PlacedOrderContext";
 
 export const Home = () => (
     <PlacedOrderContextProvider>
-        <div>
+        <div className="p-3">
             <OrderQueue />
             <OrderList />
         </div>

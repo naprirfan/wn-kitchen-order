@@ -8,7 +8,7 @@ const SOCKET_PATH = '/orders';
 const PlacedOrderContext = createContext<any>({});
 
 const PlacedOrderContextProvider = ({ children }: {children: React.ReactNode}) => {
-    const [placedOrder, setPlacedOrder] = useState();
+    const [placedOrder, setPlacedOrder] = useState({});
     const socket = React.useRef<Socket | null>(null);
 
     useEffect(() => {
