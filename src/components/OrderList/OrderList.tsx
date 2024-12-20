@@ -1,5 +1,6 @@
 import { ITableOrder } from "../../types";
 import { usePlacedOrder } from "../home/PlacedOrderContext";
+import { OrderItemCard } from "./OrderItemCard";
 
 export const OrderList = () => {
     const {placedOrder} = usePlacedOrder();
@@ -7,11 +8,10 @@ export const OrderList = () => {
     if (!Object.keys(placedOrder)?.length) {
         return null;
     }
-    
+
     const getOrdersGroupByDishes = () => {
         const dishMap: Record<string, any> = {};
         const dishWithNotes: Record<string, any> = {};
-
         Object.values(placedOrder as Record<string, ITableOrder>).forEach(({ table, itemList }) => {
             itemList.forEach(({ name, quantity, notes }) => {
                 if (notes) {
@@ -48,22 +48,21 @@ export const OrderList = () => {
 
         return (
             <div>
-                <ul className="my-3">
-                    {Object.keys(dishMap).map(key =>
-                    <li className="text-xl" key={key}>{key}: {dishMap[key].total} Porsi. (Meja {Array.from(dishMap[key].tables).join(", ")})</li>)}
-                </ul>
-                <hr />
-                <ul className="my-3">
-                    {Object.keys(dishWithNotes).map(key =>
-                    <li className="text-xl" key={key}>{key}: {dishWithNotes[key].total} Porsi. (Meja {Array.from(dishWithNotes[key].tables).join(", ")})</li>)}
-                </ul>
+                <h2 className="text-bold text-3xl mb-3">Dish List</h2>
+                <OrderItemCard dishMap={dishMap} />
+                {Object.keys(dishWithNotes).length && (
+                    <>
+                        <hr />
+                        <h2 className="text-bold text-3xl mb-3 my-3">Dish With Notes</h2>
+                    </>
+                )}
+                <OrderItemCard dishMap={dishWithNotes} />
             </div>
         )
     }
 
     return (
         <div>
-            <h1 className="text-bold text-3xl mb-3">Dish List</h1>
             <div>
                 {getOrdersGroupByDishes()}
             </div>

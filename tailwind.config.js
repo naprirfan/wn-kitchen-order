@@ -13,6 +13,7 @@ module.exports = {
       charcoal: '#131313',
       white: '#FFFFFF',
       gray: '#BBBBBB',
+      light: '#DEDEDE',
       turquoise: '#72f2c7',
     },
     spacing: {
