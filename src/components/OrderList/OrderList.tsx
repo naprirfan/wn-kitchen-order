@@ -12,6 +12,7 @@ export const OrderList = () => {
     const getOrdersGroupByDishes = () => {
         const dishMap: Record<string, any> = {};
         const dishWithNotes: Record<string, any> = {};
+
         Object.values(placedOrder as Record<string, ITableOrder>).forEach(({ table, itemList }) => {
             itemList.forEach(({ name, quantity, notes }) => {
                 if (notes) {
@@ -44,8 +45,6 @@ export const OrderList = () => {
             });
         });
 
-
-
         return (
             <div>
                 <h2 className="text-bold text-3xl mb-3">Dish List</h2>
@@ -54,18 +53,16 @@ export const OrderList = () => {
                     <>
                         <hr />
                         <h2 className="text-bold text-3xl mb-3 my-3">Dish With Notes</h2>
+                        <OrderItemCard dishMap={dishWithNotes} />
                     </>
                 )}
-                <OrderItemCard dishMap={dishWithNotes} />
             </div>
         )
     }
 
     return (
         <div>
-            <div>
-                {getOrdersGroupByDishes()}
-            </div>
+            {getOrdersGroupByDishes()}
         </div>
     );
 }
